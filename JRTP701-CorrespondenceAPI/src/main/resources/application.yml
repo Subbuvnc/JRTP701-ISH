@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: JRTP701-CorrespondenceAPI
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///jrtp701-ish-db
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    
+     
+  mail:
+    host: smtp.gmail.com
+    username: subrahmanyamvnc@gmail.com
+    password: sfaufcrpnaxdkkuh
+    properties:
+      mail:
+       transport:
+        protocol: smtp
+       smtp:
+         port: 587
+         auth: true
+         starttls:
+           enable: true
+           requried: true
+   

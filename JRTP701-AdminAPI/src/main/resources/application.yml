@@ -1,0 +1,32 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+server:
+  port: 7074
+
+spring:
+  application:
+    name: JRTP701-AdminService
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///jrtp701-ish-db
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+plan:
+  module:
+    messages:
+      save-success: plan is saved with id value
+      save-failure: plan is not saved with value
+      find-by-id-failure: plan is not found
+      update-success: plan is updated
+      update-failure: plan is not found for updation
+      delete-success: plan is deleted
+      delete-failure: plan is not found for deletion
+      status-change-success: plan status is changed
+      status-change-failure: plan is not found for status change

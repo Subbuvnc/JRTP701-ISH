@@ -1,0 +1,18 @@
+server:
+  port: 7073
+
+spring:
+  application:
+    name: JRTP701-EligibilityDeterminiationService
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///jrtp701-ish-db
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+
